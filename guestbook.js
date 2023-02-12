@@ -4,7 +4,7 @@
 const apiUrl = 'https://us-east.functions.appdomain.cloud/api/v1/web/89ae1ee6-c41b-4869-8525-9a158ac3b32e/guestbook';
 const guestbook = {
   // retrieve the existing guestbook entries
-  
+  get() {
     return $.ajax({
       type: 'GET',
       url: `${apiUrl}`,
